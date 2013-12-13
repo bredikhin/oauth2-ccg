@@ -1,6 +1,5 @@
 {
-  "name": "oauth2-client",
-  "private": true,
+  "name": "oauth2-ccg",
   "version": "0.0.1",
   "description": "OAuth2 Client Credentials Grant",
   "dependencies": {
