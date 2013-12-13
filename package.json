@@ -1,0 +1,19 @@
+{
+  "name": "oauth2-client",
+  "private": true,
+  "version": "0.0.1",
+  "description": "OAuth2 Client Credentials Grant",
+  "dependencies": {
+    "underscore": "1.5.2"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:bredikhin/oauth2-ccg.git"
+  },
+  "author": "Ruslan Bredikhin",
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  }
+}
