@@ -1,1 +1,1 @@
-exports = module.exports = require('oauth2-ccg').clientCredentialsGrant;
+exports = module.exports = require('./oauth2-ccg').clientCredentialsGrant;
