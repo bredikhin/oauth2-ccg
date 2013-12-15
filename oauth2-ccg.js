@@ -1,14 +1,24 @@
+/**
+ * Module dependencies
+ */
 var http = require('http')
   , querystring = require('querystring')
   , _ = require('underscore');
 
+/**
+ * Client Credentials Grant (http://tools.ietf.org/html/rfc6749#section-4.4)
+ *
+ * @param {Object} config
+ * @param {Function} done
+ */
 module.exports.clientCredentialsGrant = function(config, done) {
   var postBody = querystring.stringify({
-    grant_type: 'client_credentials',
+    grant_type: 'client_credentials', // Fixed according to the OAuth 2.0 specs
     scope: config['scope']
   });
 
   var postOptions = config['clientCredentialsGrantEndpoint'];
+  // Using OAuth 2.0 client_id and client_secret as basic auth credentials
   postOptions['auth'] = config['clientId'] + ':' + config['clientSecret'];
 
   var req = http.request(postOptions, function(res) {
