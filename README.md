@@ -1,5 +1,7 @@
 # OAuth 2.0 Client Credentials Grant
 
+[![Build Status](https://travis-ci.org/bredikhin/oauth2-ccg.png?branch=master)](https://travis-ci.org/bredikhin/oauth2-ccg)
+
 This module implements getting an auth token from an OAuth 2.0 server
 following [Client Credentials Grant](http://tools.ietf.org/html/rfc6749#section-4.4)
 flow.
