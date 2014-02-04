@@ -5,6 +5,13 @@
   "dependencies": {
     "underscore": "~1.5.2"
   },
+  "devDependencies": {
+    "mocha": "~1.17.1"
+  },
+  "scripts": {
+    "test": "PORT=9999 NODE_ENV=test ./node_modules/.bin/mocha -R spec --recursive",
+    "autotest": "./node_modules/.bin/supervisor -i .tmp -q -n exit -x ./node_modules/.bin/mocha -- -R spec -G -b --recursive"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
