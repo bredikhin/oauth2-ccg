@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "OAuth2 Client Credentials Grant",
   "dependencies": {
-    "underscore": "~1.5.2"
+    "underscore": "~1.6.0"
   },
   "devDependencies": {
     "mocha": "~1.17.1"
