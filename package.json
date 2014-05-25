@@ -6,7 +6,7 @@
     "underscore": "~1.6.0"
   },
   "devDependencies": {
-    "mocha": "~1.18.2"
+    "mocha": "^1.19.0"
   },
   "scripts": {
     "test": "PORT=9999 NODE_ENV=test ./node_modules/.bin/mocha --recursive -R spec",
